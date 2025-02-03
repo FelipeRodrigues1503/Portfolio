@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+/* Configuração do fundo de partículas */
+#particles-js {
+    position: absolute; /* Fundo ocupa toda a página */
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Mantém as partículas no fundo */
+    background: #111111 /* Fundo escuro tecnológico */
+}
+
+/* Estilização da caixa principal */
+.caixa-principal {
+    position: relative; /* Mantém os elementos dentro dela */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menu dentro da caixa principal */
+nav {
+    position: fixed; /* Mantém o menu fixo no topo da página, mesmo quando o usuário rolar */
+    top: 0; /* Posiciona o menu no topo da página */
+    left: 50%; /* Move o menu para o meio da tela (mas ainda alinhado à esquerda) */
+    transform: translateX(-50%); /* Ajusta a posição para que o centro do menu fique no meio da tela */
+    width: 80%; /* Define a largura do menu como 80% da tela */
+    display: flex; /* Ativa o modelo Flexbox para organizar os itens do menu */
+    justify-content: space-between; /* Mantém os itens afastados: primeiro à esquerda, último à direita */
+    align-items: center; /* Centraliza os itens verticalmente */
+    padding: 20px; /* Adiciona espaçamento interno de 20px ao redor do conteúdo */
+    background: rgba(50, 53, 59, 0.486); /* Fundo preto semi-transparente para efeito estilizado */
+    border-radius: 10px; /* Arredonda levemente as bordas do menu */
+}
+
+/* Estilização do título "Portfólio" */
+.portifolio {
+    color: white;
+    font-size: 28px;
+    width: 80%;
+}
+
+.portifolio span {
+    color: #3C82B5; /* Destaque azul */
+}
+
+/* Estilização dos links do menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3C82B5; /* Efeito hover azul */
+}
+
+.foto {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center;
+    margin-top: 20px; /* Espaçamento entre o menu e a foto */
+}
+
+.foto img {
+        width: 150px; /* Define um tamanho fixo para a imagem */
+        height: 150px; /* Mantém a proporção */
+        border-radius: 50%; /* Torna a imagem redonda */
+        border: 3px solid white; /* Adiciona uma borda branca ao redor */
+        object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+    }
+
+
+/* Estilização da apresentação */
+.meu-nome {
+    text-align: center;
+    margin-top: 50px; /* Espaçamento entre o menu e o nome */
+    color: white;
+}
+
+.meu-nome h3{
+    color: #3C82B5 ;
+}
+
+/* Ícones sociais */
+.icone-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.icone-sociais a {
+    font-size: 30px;
+    color: white;
+    transition: 0.3s;
+}
+
+.icone-sociais a:hover {
+    color: #3C82B5;
+}

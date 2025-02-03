@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="caixa-principal">
+        <!-- Fundo animado de partículas -->
+        <div id="particles-js"></div>
+
+        <!-- Navegação fixada no topo -->
+        <nav>
+            <h2 class="portifolio">Portfó<span>lio</span></h2>
+            <ul>
+                <li><a href="https://wa.me/5514996439406" target="_blank">Fale comigo</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="foto">
+            <img src="felipe_foto.jpg" alt="Foto Felipe">
+        </div>
+
+        <!-- Apresentação -->
+        <div class="meu-nome">
+            <h1>Felipe <span>Rodrigues</span></h1>
+            <h3>Student, Dev&Ops, Technical Support</h3>
+        </div>
+
+        <!-- Ícones Sociais -->
+        <div class="icone-sociais">
+
+            <a href="https://wa.me/5514996439406" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/felipe-rodrigues-191768270" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/FelipeRodrigues1503" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+
+        </div>
+
+        <!-- Script das partículas -->
+        <script>
+            particlesJS("particles-js", {
+                particles: {
+                    number: { value: 50 }, // Quantidade de partículas
+                    size: { value: 3 }, // Tamanho das partículas
+                    move: { speed: 2 }, // Velocidade de movimento das partículas
+                    line_linked: { enable: true, opacity: 0.3 }, // Linhas conectando partículas
+                    color: { value: "#007bff" } // Cor azul
+                }
+            });
+        </script>
+    </div>
+</body>
+
+</html>
